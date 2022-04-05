@@ -1,21 +1,16 @@
-import { getSession, useUser } from '@auth0/nextjs-auth0';
-import { withPageAuthRequired } from '@auth0/nextjs-auth0';
-import { GetServerSideProps } from 'next';
-import Link from 'next/link';
-import React from 'react';
+import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
+import { GetServerSideProps } from "next";
+import React from "react";
 
-export default function Home(){
-  const { user } = useUser()
+export default function Home() {
+  const { user } = useUser();
   return (
     <div>
-        <h1>Hello World</h1>
+      <h1>Hello World</h1>
 
-        <pre>
-          {JSON.stringify(user, null, 2)}
-        </pre>
-
+      <pre>{JSON.stringify(user, null, 2)}</pre>
     </div>
   );
 }
 
-export const getServerSideProps: GetServerSideProps = withPageAuthRequired()
+export const getServerSideProps: GetServerSideProps = withPageAuthRequired();
