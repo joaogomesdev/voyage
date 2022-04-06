@@ -15,8 +15,8 @@ model Customer {
 
   purchases Purchase[]
 
-  created_at DateTime @default(now())
-  updated_at DateTime @default(now()) @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 enum PurchaseStatus {
@@ -28,20 +28,20 @@ enum PurchaseStatus {
 model Product {
   id String @id @default(uuid())
 
-  status PurchaseStatus @default(PENDING)
-
   title String
   slug  String @unique
 
   purchasedOn Purchase[]
 
-  created_at DateTime @default(now())
-  updated_at DateTime @default(now()) @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
 
 }
 
 model Purchase {
   id String @id @default(uuid())
+
+  status PurchaseStatus @default(PENDING)
 
   customer   Customer @relation(fields: [customerId], references: [id])
   customerId String
@@ -49,6 +49,6 @@ model Purchase {
   product   Product @relation(fields: [productId], references: [id])
   productId String
 
-  created_at DateTime @default(now())
-  updated_at DateTime @default(now()) @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
 }
