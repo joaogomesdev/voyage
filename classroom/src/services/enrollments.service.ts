@@ -15,4 +15,20 @@ export class EnrollmentsService {
       },
     });
   }
+
+  findById(id: string) {
+    return this.prisma.enrollment.findUnique({
+      where: { id },
+    });
+  }
+
+  findByStudent(studentId: string) {
+    return this.prisma.enrollment.findMany({
+      where: {
+        studentId,
+        canceledAt: null,
+      },
+      orderBy: { createdAt: 'desc' },
+    });
+  }
 }
