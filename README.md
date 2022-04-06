@@ -36,7 +36,7 @@
   <a href="#dart-about">About</a> &#xa0; | &#xa0;
   <a href="#sparkles-features">Resources</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Pré-requisitos</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Getting starter</a> &#xa0; | &#xa0;
   <a href="#memo-license">Licence</a> &#xa0; | &#xa0;
   <a href="https://github.com/JoaoGomes5" target="_blank">Author</a>
@@ -46,7 +46,7 @@
 
 ## :dart: About
 
-- [] Under construction 🚧
+- 🧑‍🚀 An amazing voyage to microservices universe 🌌
 
 ## :sparkles: Resources
 
