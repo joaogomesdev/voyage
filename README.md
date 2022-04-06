@@ -50,14 +50,16 @@
 
 ## :sparkles: Resources
 
-- [] Under construction 🚧
+Under construction 🚧
+
 <!-- :heavy_check_mark: ...;\ -->
 
 ## :rocket: Technologias/Dependências (Até o momento)
 
 The following tools/dependencies were used in this project:
 
-- [] Under construction 🚧
+Under construction 🚧
+
 <!-- - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [@testing-library/jest-dom: ^4.2.4](https://github.com/testing-library/jest-dom)
@@ -78,7 +80,8 @@ The following tools/dependencies were used in this project:
 
 Dev dependencies
 
-- [] Under construction 🚧
+Under construction 🚧
+
 <!-- - [@types/styled-components: ^5.1.2]()
 - [@typescript-eslint/eslint-plugin: ^3.9.1]()
 - [@typescript-eslint/parser: ^3.9.1]()
@@ -99,11 +102,11 @@ Dev dependencies
 
 <!-- Antes de tudo :checkered_flag:, tenha configurado em seu ambiente de desenvolvimento o [Git](https://git-scm.com) e o [Node](https://nodejs.org/en/). -->
 
-- [] Under construction 🚧
+Under construction 🚧
 
 ## :checkered_flag: Getting starter
 
-- [] Under construction 🚧
+Under construction 🚧
 
 <!-- ```bash
 
