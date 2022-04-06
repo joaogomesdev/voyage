@@ -1,16 +1,16 @@
 import { UseGuards } from '@nestjs/common';
 import { Query, Resolver } from '@nestjs/graphql';
-import { PrismaService } from '../../../database/prisma/prisma.service';
 import { AuthorizationGuard } from '../../../http/auth/authorization.guard';
+import { CoursesService } from '../../../services/courses.service';
 import { Course } from '../models/course';
 
 @Resolver(() => Course)
 export class CoursesResolver {
-  constructor(private prisma: PrismaService) {}
+  constructor(private coursesService: CoursesService) {}
 
-  @Query(() => String)
+  @Query(() => [Course])
   @UseGuards(AuthorizationGuard)
   courses() {
-    return '';
+    return this.coursesService.index();
   }
 }

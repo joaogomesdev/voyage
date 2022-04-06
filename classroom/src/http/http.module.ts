@@ -7,6 +7,7 @@ import { DatabaseModule } from '../database/database.module';
 import { CoursesService } from '../services/courses.service';
 import { EnrollmentsService } from '../services/enrollments.service';
 import { StudentsService } from '../services/students.service';
+import { CoursesResolver } from './graphql/resolvers/courses.resolver';
 import { EnrollmentsResolver } from './graphql/resolvers/enrollments.resolver';
 import { StudentsResolver } from './graphql/resolvers/students.resolver';
 
@@ -23,6 +24,7 @@ import { StudentsResolver } from './graphql/resolvers/students.resolver';
     // Resolvers
     EnrollmentsResolver,
     StudentsResolver,
+    CoursesResolver,
     // Services
     EnrollmentsService,
     StudentsService,
