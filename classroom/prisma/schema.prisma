@@ -15,8 +15,8 @@ model Student {
 
   enrollments Enrollment[]
 
-  created_at DateTime @default(now())
-  updated_at DateTime @default(now()) @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model Course {
@@ -27,8 +27,8 @@ model Course {
 
   enrolledOn Enrollment[]
 
-  created_at DateTime @default(now())
-  updated_at DateTime @default(now()) @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model Enrollment {
@@ -41,6 +41,6 @@ model Enrollment {
   courseId String
 
   canceledAt DateTime?
-  created_at DateTime  @default(now())
-  updated_at DateTime  @default(now()) @updatedAt
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @default(now()) @updatedAt
 }
