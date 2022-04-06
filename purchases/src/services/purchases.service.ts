@@ -18,6 +18,27 @@ export class PurchasesService {
     });
   }
 
+  async indexByCustomer(customerId: string) {
+    const customer = await this.prisma.customer.findUnique({
+      where: {
+        id: customerId,
+      },
+    });
+
+    if (!customer) {
+      throw new Error('Customer does not exists');
+    }
+
+    return this.prisma.purchase.findMany({
+      where: {
+        customerId,
+      },
+      orderBy: {
+        createdAt: 'desc',
+      },
+    });
+  }
+
   async create({ customerId, productId }: CreatePurchaseParams) {
     const product = await this.prisma.product.findUnique({
       where: { id: productId },
