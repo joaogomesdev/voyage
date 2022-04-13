@@ -59,14 +59,14 @@ function Courses() {
 
             <div className="bg-white shadow overflow-hidden sm:rounded-md mt-8">
               <ul role="list" className="divide-y divide-gray-200">
-                {data?.me.enrollments.map((enrollment) => (
-                  <li key={enrollment.id}>
+                {/* {data?.me.enrollments.map((enrollment) => ( */}
+                  <li key='1'>
                     <div className="px-4 py-4 flex items-center sm:px-6">
                       <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
                         <div className="truncate">
                           <div className="flex text-sm">
                             <p className="font-medium text-indigo-600 truncate">
-                              {enrollment.course.title}
+                              Nome do curso
                             </p>
                             <p className="ml-1 flex-shrink-0 font-normal text-gray-500">
                               em Programação
@@ -80,9 +80,9 @@ function Courses() {
                               />
                               <p>
                                 Turma inicia em{" "}
-                                <time dateTime={enrollment.createdAt}>
+                                <time dateTime='2022/01/10'>
                                   {dateFormatter.format(
-                                    new Date(enrollment.createdAt)
+                                    new Date('2022/01/10')
                                   )}
                                 </time>
                               </p>
@@ -103,7 +103,7 @@ function Courses() {
                         </div>
                       </div>
                       <div className="ml-5 flex-shrink-0">
-                        <Link href={`/app/courses/${enrollment.course.slug}`}>
+                        <Link href={`/app/courses/${1}`}>
                           <a className="px-2 py-1 border border-transparent text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700">
                             Assistir aulas
                           </a>
@@ -111,7 +111,7 @@ function Courses() {
                       </div>
                     </div>
                   </li>
-                ))}
+                {/* ))} */}
               </ul>
             </div>
           </main>
